@@ -18,17 +18,17 @@
 #include <math.h>
 #include <time.h>
 
+#define length       1.4000        /* length of folds in cm 
+                                      (Standard Ishizaka-Flanagan: 1.4) */
 #define cc              35.0       // speed of sound
-#define P_DC         0.01000       // DC pressure in subglottis = 8 [cmH2O]
 #define rho          0.00113       // atmospheric density
+#define P_DC         0.01000       // DC pressure in subglottis = 10 [cmH2O]
 
 #define Num_Section_VT  44         // number of sections for vocal tract
 #define Num_Section_SG  62         // number of sections for subglottis
 #define dX             (17.5/44.0) // length of each section [cm]
 #define dt             (dX/cc)     // integration time step [msec]
 
-#define length       1.4000        /* length of folds in cm 
-                                      (Standard Ishizaka-Flanagan: 1.4) */
 #define DIM          9
 
 #define m_1_0        0.0090        // 1st mass [g]
