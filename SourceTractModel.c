@@ -92,7 +92,7 @@ int main()
   Start(); 
   for(i=0;i<5000;i++) Update(); 
 
-  fp=fopen("Trajectory.txt","w");
+  fp=fopen("Flow.txt","w");
   for(j=0;j<200;j++){
     for(k=0;k<4;k++) Update();
     fprintf(fp,"%lf %lf\n",XX[8],Ug);
