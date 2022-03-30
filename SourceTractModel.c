@@ -81,14 +81,14 @@ double P_t;                        // supraglottal pressure
 int main()
 {
   int    i,j,k;
-  double Q;  //Q-parameter to control fundamental frequency
+  double T;  //Tension parameter to control fundamental frequency
   void   ParameterSetting();
   void   Start();
   void   Update();
   FILE   *fp;
   
-  Q = 3.0;
-  ParameterSetting(Q); 
+  T = 3.0;
+  ParameterSetting(T); 
   Start(); 
   for(i=0;i<5000;i++) Update(); 
 
